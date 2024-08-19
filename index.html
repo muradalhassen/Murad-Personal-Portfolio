@@ -1,0 +1,335 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Murad Alhassen</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Technical Skills</a></li>
+          <li><a href="#projects">Extracurricular Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Murad Alhassen</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Technical Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Extracurricular Experience</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./Images/Untitled design.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Murad Alhassen</h1>
+        <p class="section__text__p2">Computer Science student at Arizona State University</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./Images/Resume.pdf')"
+          >
+            Download Resume
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./Images/317750_linkedin_icon.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/in/murad-alhassen/'"
+          />
+          <img
+            src="./Images/github-mark.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/muradalhassen'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./Images/Murads Headshot.jpeg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./Images/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Sophomore studying <br />Computer Science with a focus in Software Engineering</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./Images/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.S. in Computer Science at Arizona State University</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                Motivated Computer Science student with a proven track record of effective leadership and strong teamwork skills, adept at collaborating with diverse groups to achieve project goals. Seeking internship and co op opportunities to expand software engineering skills.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./Images/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Technical Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./Images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React.JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./Images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Material UI</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Tools, Databases, and OS</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./Images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>GitHub </h3>
+                  <p>Experienced	
+                    </p>
+                </div>
+              </article>
+              <article>
+                <img
+                src="./Images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>MacOS</h3>
+                  <p>Experienced	
+                    </p>
+                </div>
+              </article>
+              <article>
+                <img
+                src="./Images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>API</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                src="./Images/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./Images/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Extracurricular Experiences</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <h1>Aug 2024-Present</h1>
+            </div>
+            <h1 class="experience-sub-title project-title">Founder and President of Color Stack at ASU: Tempe, AZ</h1>
+            <div class="btn-container">
+              <p>Developed a safe place and sense of community for over 30+ Black and LaOnx students pursuing CS, projected to double in
+                membership size over the next year.</p>
+          </div>
+          <div class="article-container">
+            <h1>May 2025-Present</h1>
+          </div>
+          <h1 class="experience-sub-title project-title">Vice President of National Society of Black Engineers: Tempe, AZ</h1>
+          <div class="btn-container">
+            <p>Led a dynamic annual fair, raising an impressive $42,000 in funds and securing participation from 10 leading companies, while also orchestrating a 20-student delegation for a pivotal regional conference, showcasing exceptional organizational and leadership skills.</p>
+        </div>
+        <div class="article-container">
+          <h1>June 2024-Present</h1>
+        </div>
+        <h1 class="experience-sub-title project-title">JPMorgan Chase & Co. - Software Engineering Virtual Experience</h1>
+        <div class="btn-container">
+          <p>Actively learning stock price data feed interface, utilizing JPMorgan Chase frameworks for data visualization, and displaying
+            data visually for traders. Acquired skills in financial data analysis, Python programming, Git, React, TypeScript, and web
+            application development.</p>
+      </div>
+        </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./Images/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./Images/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">Murad.alhassen1@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./Images/317750_linkedin_icon.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/murad-alhassen">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Technical Skills</a></li>
+            <li><a href="#projects">Extracurricular Experience</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2023 Murad Alhassen. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
